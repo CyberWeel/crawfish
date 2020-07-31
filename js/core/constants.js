@@ -1,3 +1,5 @@
-const MANY = 'many';
+const SERVICE = {
+    MANY: 'many'
+};
 
-export {MANY};
+export {SERVICE};
