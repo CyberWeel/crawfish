@@ -4,6 +4,6 @@ $pageTitle = 'Главная';
 ?>
 <?php require_once TEMPLATES.'/header.php' ?>
 
-Тут должен быть контент главной страницы
+Sample Text
 
 <?php require_once TEMPLATES.'/footer.php' ?>
