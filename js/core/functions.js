@@ -1,4 +1,4 @@
-import {MANY} from './constants';
+import {SERVICE} from './constants';
 
 /**
  * Функция ищет элемент по селектору
@@ -8,11 +8,11 @@ import {MANY} from './constants';
  * @return Первый обнаруженный DOM-элемент, или, при заданном втором параметре -
  * возвращает массив обнаруженных DOM-элементов
  * @author Nikita Murashov
- * @contributor MAKAP MOPKOBKUH
+ * @author MAKAP MOPKOBKUH
  */
 function $el(selector, quantity = undefined)
 {
-    if (quantity === MANY) {
+    if (quantity === SERVICE.MANY) {
         return Array.from(document.querySelectorAll(selector));
     } else {
         return document.querySelector(selector);
