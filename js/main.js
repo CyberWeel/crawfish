@@ -1,4 +1,7 @@
 'use strict';
 
-import {SERVICE} from './core/constants';
-import {$el, $value} from './core/functions';
+import {CONSTS} from './../core/js/consts';
+import {$el, $value} from './../core/js/funcs';
+import {} from './../core/js/cookie';
+
+/* Пользовательские скрипты начинаются тут */

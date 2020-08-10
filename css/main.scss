@@ -1,6 +1,9 @@
-@import './settings/reset.scss';
-@import './settings/fonts.scss';
-@import './settings/parameters.scss';
-@import './settings/general.scss';
+@import './core/reset.scss';
+@import './core/fonts.scss';
+@import './core/params.scss';
+@import './core/general.scss';
+@import './core/utilities.scss';
 
-@import './settings/media.scss';
+/* Здесь должны быть *.scss-файлы из папки blocks */
+
+@import './core/media.scss';

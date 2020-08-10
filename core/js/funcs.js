@@ -1,10 +1,10 @@
-import {SERVICE} from './constants';
+import {CONSTS} from './consts';
 
 /**
  * Функция ищет элемент по селектору
  *
  * @param selector Селектор, по которому производится поиск
- * @param quantity При заданной константе MANY ищет несколько элементов
+ * @param quantity При заданной константе SEVERAL ищет несколько элементов
  * @return Первый обнаруженный DOM-элемент, или, при заданном втором параметре -
  * возвращает массив обнаруженных DOM-элементов
  * @author Nikita Murashov
@@ -12,7 +12,7 @@ import {SERVICE} from './constants';
  */
 function $el(selector, quantity = undefined)
 {
-    if (quantity === SERVICE.MANY) {
+    if (quantity === CONSTS.SEVERAL) {
         return Array.from(document.querySelectorAll(selector));
     } else {
         return document.querySelector(selector);

@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: $black;
+    font: $fontSize $fontFamily;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    background: $white;
+}
+
+a, button, input {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.all {
+    @include flex;
+
+    // Весь контент страницы (кроме футера) должен быть обёрнут в этот блок
+    &__content {
+        @include flex;
+    }
+}
+
+// Футер страницы
+.footer {
+    flex: 0 0 auto;
+
+    &__content {
+        @include center-flex;
+
+        text-align: center;
+    }
+}
+
+.container {
+    @include flex;
+
+    max-width: 900px;
+    width: 90%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.cookie {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .8);
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $medium;
+        color: $white;
+    }
+
+    &__text {
+        margin-right: $medium;
+    }
+
+    &__button {
+        padding: $small;
+        border: $verySmall solid $cookie;
+        border-radius: $verySmall;
+        background: transparent;
+        transition: background $duration;
+
+        &:hover {
+            background: $cookie;
+        }
+    }
+}
+
+.site-author {
+    //
+
+    & > a {
+        text-decoration: underline;
+    }
+}
