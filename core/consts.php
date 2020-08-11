@@ -14,3 +14,5 @@ define('MEDIA', ROOT.'/media');
 
 define('PAGES', '/pages');
 define('TEMPLATES', ROOT.'/pages/templates');
+
+define('PHP', ROOT.'/php');
