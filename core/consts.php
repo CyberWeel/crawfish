@@ -5,7 +5,7 @@ define('ROOT', $_SERVER["DOCUMENT_ROOT"]);
 define('CORE', ROOT.'/core');
 define('CORE-JS', '/core/js');
 define('ADMIN', CORE.'/admin');
-define('ADMIN-CSS', '/core/css');
+define('ADMIN-CSS', '/admin/core/css');
 
 define('CSS', '/css');
 define('JS', '/js');
